@@ -1,11 +1,9 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-using namespace std;
-
 struct Book {
-	string bookId;
-	string bookName;
+	std::string bookId;
+	std::string bookName;
 };
 
 struct SalesData {
