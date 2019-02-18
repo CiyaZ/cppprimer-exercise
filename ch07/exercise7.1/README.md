@@ -34,4 +34,25 @@ struct Person
 
 在你的Person类中提供一些操作使其能够返回姓名和住址。这些函数是否应该是const的呢？解释原因。
 
+```cpp
+struct Person
+{
+  std::string name;
+  std::string address;
+
+  std::string getName() const;
+  std::string getAddress() const;
+};
+
+std::string Person::getName() const
+{
+	return this->name;
+}
+
+std::string Person::getAddress() const
+{
+	return this->address;
+}
+```
+
 应该是const的，因为是只读的，声明为const成员函数就无法修改该类的数据成员。
