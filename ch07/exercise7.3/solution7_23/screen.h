@@ -1,7 +1,3 @@
-//
-// Created by gaoshuhang on 2019/2/21.
-//
-
 #ifndef DEMO01_SCREEN_H
 #define DEMO01_SCREEN_H
 
@@ -14,7 +10,7 @@ public:
 
 	Screen() = default;
 
-	Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht * width, '')
+	Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht * width, 'X')
 	{};
 
 	Screen(pos ht, pos wd, char c) : height(ht), width(wd), contents(ht * wd, c)
